@@ -17,3 +17,16 @@ Tracking worker progress.
 Reassigning failed tasks.
 
 
+## worker.go
+Handles the execution of map and reduce tasks.
+Communicates with the coordinator to request tasks and send results.
+Includes logic for applying user-defined map and reduce functions.
+
+
+## rpc.go
+Defines the RPC interfaces and methods used for communication between the coordinator and workers.
+Ensures robust and efficient inter-process communication.
+
+## credit.go
+Provides utility functions and shared data structures used across the project.
+Facilitates the handling of intermediate data between the map and reduce phases.
